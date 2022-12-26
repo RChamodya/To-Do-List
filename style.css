@@ -1,0 +1,137 @@
+*{
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+}
+/* css for text */
+.head{
+  text-align: center;
+  margin-top: 150px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  
+}
+.head h1{
+  text-shadow: 2px 2px #ff0000;
+  cursor: pointer;
+}
+.head h1:hover{
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+  transition: 2s;
+}
+/* todolist css */
+*,
+*:before,
+*:after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  background:  linear-gradient(0deg, rgba(34,195,166,1) 0%, rgba(45,203,253,1) 98%);
+}
+.container{
+  border: 2px solid white;
+  width: 40%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  padding: 30px 40px;
+}
+#newtask{
+  position: relative;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 7px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
+}
+#newtask input{
+  width: 70%;
+  height: 45px;
+  font-family:'poppins', sans-serif ;
+  font-size: 20px;
+  border: 2px solid white;
+  padding: 12px;
+  color: black;
+  font-weight: 600;
+  position: relative;
+}
+#newtask input:focus{
+  outline: none;
+  border-color:rgb(180, 185, 187)  ;
+  border-radius: 7px;
+}
+#newtask button{
+  position: relative;
+  width: 100px;
+  height: 50px;
+  border-radius: 7px;
+  font-family:'poppins', sans-serif ;
+  float: right;
+  height: 50px;
+  font-size: 20px;
+  background-color:rgba(45,203,253,1) ;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+#tasks{
+  background-color: white;
+  padding: 30px 20px;
+  margin-top: 45px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
+  width: 100%;
+  position: relative;
+}
+.task{
+  background-color:white ;
+  height: 50px;
+  padding: 20px 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+.task span{
+  font-family: 'poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+.task button{
+  background-color:rgba(45,203,253,1) ;
+  color: white;
+  height: 50px;
+  width: 40px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.completed{
+  text-decoration: line-through;
+}
+.footer{
+  color:white;
+  font-size: 10px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.footer h2{
+  margin-top: 25%;
+  margin-bottom: 20px;
+}
+.footer ul li{
+  display: inline;
+  font-size: 25px;
+  margin: 10px;
+  cursor: pointer;
+}
+.footer ul li:hover{
+  color: rgb(180, 180, 252);
+}
